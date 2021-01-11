@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding ="utf-8"?>
+<odoo>
+
+    <!--Kreiranje form view nacina prikaza za Timetable-->
+    <record id="timetable_form" model="ir.ui.view">
+        <field name="name">cinema.timetable.form</field>
+        <field name="model">cinema.timetable</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="date"/>
+                            <field name="premiere"/>
+                            <field name="movie_id"/>
+                            <field name="room_id"/>
+                        </group>
+                        <group>
+                            <field name="total_seats"/>
+                            <field name="sold_seats"/>
+                            <field name="remaining_seats"/>
+                        </group>
+                    </group>
+                    <footer>
+                        <button name="%(cinema_management.launch_the_wizard)d" string="Sell tickets" type="action" class="oe_highlight"/>
+                    </footer>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+
+    <!--Definisanje tree (list) view nacina prikaza za Timetable-->
+    <record id="timetable_tree" model="ir.ui.view">
+        <field name="name">cinema.timetable.tree</field>
+        <field name="model">cinema.timetable</field>
+        <field name="arch" type="xml">
+           <tree>
+               <field name="date"/>
+               <field name="premiere"/>
+               <field name="movie_id"/>
+               <field name="room_id"/>
+           </tree>
+        </field>
+    </record>
+
+</odoo>

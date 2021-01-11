@@ -1,0 +1,25 @@
+# -*- coding: utf-8 -*-
+{
+    'name': "Cinema management",
+    'summary': 'Module for cinema management',
+    'sequence': -100,
+    'description': 'Cinema management module',
+    'author': "Andreja",
+    'website': "http://www.yourcompany.com",
+    'licence': 'LGPL-3',
+    'category': 'Extra Tools',
+    'version': '0.1',
+    'depends': ['product'],
+    'data': [
+        'views/wizardTickets.xml',
+        'views/movie.xml',
+        'views/timetable.xml',
+        'views/room.xml',
+        'views/product.xml',
+        'views/views.xml',
+    ],
+    'demo': [],
+    'installable': True,
+    'application': True,
+    'auto_install': False,
+}

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding ="utf-8"?>
+<odoo>
+
+    <!--Kreiranje form view nacina prikaza za Wizard-->
+    <record id="wizard_form" model="ir.ui.view">
+        <field name="name">cinema.wizard.form</field>
+        <field name="model">cinema.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Sell tickets">
+                <group>
+                    <field name="tickets"/>
+                    <field name="partner_id"/>
+                    <field name="product_id"/>
+                </group>
+                <footer>
+                    <button name="update_sold_seats" type="object" string="Sell tickets" class="btn-primary"/>
+                    <button string="Cancel" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <!--Definisanje akcije-->
+    <record id="launch_the_wizard" model="ir.actions.act_window">
+        <field name="name">Launch the Wizard</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">cinema.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+        <field name="view_id" ref="wizard_form"/>
+    </record>
+
+</odoo>
