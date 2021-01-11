@@ -11,6 +11,7 @@ class Movie(models.Model):
         ('animated', 'Animated'),
         ('horor', 'Horor')
     ], default ='comedy', required=True)
+    # Godina izdanja
     release_year = fields.Integer(string= 'Release year')
     description = fields.Text(string = 'Description')
     image = fields.Binary(string= 'Image')
