@@ -1,5 +1,6 @@
 from odoo import fields, models
 
+
 class Movie(models.Model):
     _name = "cinema.movie"
     _description = "Cinema movies"
@@ -11,7 +12,6 @@ class Movie(models.Model):
         ('animated', 'Animated'),
         ('horor', 'Horor')
     ], default ='comedy', required=True)
-    # Godina izdanja
     release_year = fields.Integer(string= 'Release year')
     description = fields.Text(string = 'Description')
     image = fields.Binary(string= 'Image')

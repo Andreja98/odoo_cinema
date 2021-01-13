@@ -11,6 +11,8 @@
     'version': '0.1',
     'depends': ['product'],
     'data': [
+        'security/security.xml',
+        'security/ir.model.access.csv',
         'views/wizardTickets.xml',
         'views/movie.xml',
         'views/timetable.xml',

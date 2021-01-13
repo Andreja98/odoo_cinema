@@ -1,2 +1,7 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_cinema_management_cinema_management,cinema_management.cinema_management,model_cinema_management_cinema_management,base.group_user,1,1,1,1
+access_cinema_movie_user,access.cinema.movie,model_cinema_movie,cinema_user,1,0,0,0
+access_cinema_timetable_user,access.cinema.timetable,model_cinema_timetable,cinema_user,1,0,0,0
+access_cinema_room_user,access.cinema.room,model_cinema_room,cinema_user,1,0,0,0
+access_cinema_movie_manager,access.cinema.movie,model_cinema_movie,cinema_manager,1,1,0,0
+access_cinema_timetable_manager,access.cinema.timetable,model_cinema_timetable,cinema_manager,1,1,0,0
+access_cinema_room_manager,access.cinema.room,model_cinema_room,cinema_manager,1,1,0,0

@@ -1,0 +1,11 @@
+<odoo>
+
+    <record id="cinema_user" model="res.groups">
+        <field name="name">Cinema management / Cinema user</field>
+    </record>
+
+    <record id="cinema_manager" model="res.groups">
+        <field name="name">Cinema management / Cinema manager</field>
+    </record>
+
+</odoo>
