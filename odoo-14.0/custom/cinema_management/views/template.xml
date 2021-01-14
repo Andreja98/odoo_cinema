@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding ="utf-8"?>
+<odoo>
+    <template id="modify_datepicker" inherit_id="Backend Assets (used in backend interface).assets_backend">
+        <xpath expr="." position="inside">
+            <script type="text/javascript" src="/cinema_management/static/src/js/template.js"/>
+        </xpath>
+    </template>
+</odoo>

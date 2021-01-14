@@ -71,7 +71,7 @@ div.dropdown-menu.bootstrap-datetimepicker-widget{
             > tr {
                 > td {
                     &.active, .active {
-                        background-color: $o-brand-primary;
+                        background-color: #0609cc;
                         border-radius: 100px;
                     }
 
@@ -89,10 +89,10 @@ div.dropdown-menu.bootstrap-datetimepicker-widget{
         margin: 0;
         @include transition($btn-transition);
         &.primary {
-            background-color: $o-brand-primary;
+            background-color: #bd0618;
             color: white;
             &:hover {
-                background-color: darken($o-brand-primary, 10%);
+                background-color: darken(#bd0618, 40%);
             }
         }
     }
