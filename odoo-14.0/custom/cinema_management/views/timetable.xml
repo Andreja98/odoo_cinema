@@ -10,7 +10,7 @@
                 <sheet>
                     <group>
                         <group>
-                            <field name="date"/>
+                            <field name="date"/> <!-- options='{"datepicker": {"daysOfWeekDisabled": [0,6]}}' -->
                             <field name="premiere"/>
                             <field name="movie_id"/>
                             <field name="room_id"/>
