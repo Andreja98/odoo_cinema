@@ -7,12 +7,14 @@ odoo.define("cinema_management.SampleTemplate", function (require){
    var _t = core._t;
 
    Screens.DateWidget.include({
-        _onInputClicked: function () {
-        this.__libInput++;
-        this.$el.datetimepicker('toggle');
-        this.__libInput--;
-        this.focus();
-        alert("Thank you for entering the date");
+        _onDateTimePickerHide: function () {
+        this.__isOpen = false;
+        this.changeDatetime();
+        if (this._onScroll) {
+            window.removeEventListener('wheel', this._onScroll, true);
+        }
+        this.changeDatetime();
+        alert("Thank you for entering the date")
     }
    })
 });

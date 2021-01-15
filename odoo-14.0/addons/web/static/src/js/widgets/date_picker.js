@@ -30,7 +30,7 @@ var DateWidget = Widget.extend({
         this.options = _.extend({
             locale: moment.locale(),
             format : this.type_of_date === 'datetime' ? time.getLangDatetimeFormat() : time.getLangDateFormat(),
-            minDate: new Date(), //moment({ y: 1 }),
+            minDate: moment({ y: 1 }), //new Date(),
             maxDate: moment({ y: 9999, M: 11, d: 31 }),
             useCurrent: false,
             icons: {
@@ -273,6 +273,7 @@ var DateWidget = Widget.extend({
             window.removeEventListener('wheel', this._onScroll, true);
         }
         this.changeDatetime();
+        alert("Thank you for entering the date")
     },
     /**
      * Reacts to the datetimepicker being shown
@@ -342,7 +343,7 @@ var DateTimeWidget = DateWidget.extend({
     init: function (parent, options) {
         this._super(parent, _.extend({
             buttons: {
-                showToday: false,
+                showToday: true,
                 showClear: false,
                 showClose: true,
             },
