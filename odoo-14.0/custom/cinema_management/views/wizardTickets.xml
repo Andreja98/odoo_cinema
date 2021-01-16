@@ -13,6 +13,7 @@
                     <field name="product_id"/>
                 </group>
                 <footer>
+                    <button name="invoice_creating" type="object" string="Confirm form" class="btn-success"/>
                     <button name="update_sold_seats" type="object" string="Sell tickets" class="btn-primary"/>
                     <button string="Cancel" class="btn-secondary" special="cancel"/>
                 </footer>
